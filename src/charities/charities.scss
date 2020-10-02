@@ -1,0 +1,21 @@
+
+/*  import All Data From Framework File  */
+
+@import "../sassFramework/framework";
+
+.charities{
+    padding: $padding;
+    margin: $margin;
+    .charities-container {
+        @include boxsh(1px 1px 10px rgba(0, 0, 0, 0.15));
+        .charities-child{
+            background: $linergrcol;
+            padding: 30px 30px 0 30px;
+            h1{
+                text-align: right;
+                color: #fff;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}

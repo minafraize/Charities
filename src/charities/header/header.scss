@@ -1,0 +1,13 @@
+@import "../../sassFramework/framework";
+
+.header{
+    @extend .head-footer;
+    position: relative;
+    .authentication{
+        position: absolute;
+        padding: 15px;
+        background: #eee;
+        top: 13%;
+        @include borderRad(50%);
+    }
+}

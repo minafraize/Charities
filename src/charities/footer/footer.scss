@@ -1,0 +1,33 @@
+@import "../../sassFramework/framework";
+
+.footer{
+    @extend .head-footer;
+    overflow: hidden;
+    .powerded-by{
+        float: left;
+    }
+    .follow-us{
+        float: right;
+        .icon{
+            @extend %trans;
+            &:hover{
+                @include rotat(360deg);
+            }
+        }
+        .facebook-icon{
+            margin-right: 25px;
+            color: #4267B2;
+        }
+        .insta-icon{
+            color: transparent;
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+            background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+            background-clip: text;
+            -webkit-background-clip: text;
+        }
+        a{
+            color: transparent;
+            text-decoration: none;
+        }
+    }
+}

@@ -1,0 +1,49 @@
+$btncol: #e6007e;
+$headCol: #32a6df ;
+$linergrcol : linear-gradient(to right, #e3037f 0%, #32a6df 100%);
+
+$tran: all .3s ease-in-out;
+$margin: 50px auto;
+$padding: 50px 0;
+$headFootPadding: 20px;
+
+.head-footer{
+    padding: $headFootPadding;
+    text-align: center;
+    background-color: #fff;
+}
+
+%trans {
+	-webkit-transition: $tran;
+	-moz-transition: $tran;
+	-o-transition: $tran;
+	-ms-transition: $tran;
+	transition: $tran;
+}
+
+@mixin borderRad ($boRa) {
+	-webkit-border-radius: $boRa;
+	-moz-border-radius: $boRa;
+	-ms-border-radius: $boRa;
+	-o-border-radius: $boRa;
+	border-radius: $boRa
+}
+
+@mixin boxsh ($bSh...) {
+	-moz-box-shadow: $bSh;
+	-webkit-box-shadow: $bSh;
+	-o-box-shadow: $bSh;
+	-ms-box-shadow: $bSh;
+	box-shadow: $bSh;
+}
+
+@mixin transform($transforms) {
+	-webkit-transform: $transforms;
+	-moz-transform: $transforms;
+	-ms-transform: $transforms;
+	-o-transform: $transforms;
+	transform: $transforms;
+}
+@mixin rotat ($rot) {
+	@include transform(rotate($rot));
+} 
